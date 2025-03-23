@@ -1,40 +1,37 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Madhu Goutham Reddy",
+  lastName: "Ambati",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Machine Learning Engineer & Computer Vision Specialist",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "America/Chicago", // IANA time zone identifier for Chicago
+  languages: ["English"],
 };
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Subscribe to Madhu's Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally share insights on scalable machine learning, computer vision, and emerging AI innovations.
     </>
   ),
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/madhugoutham",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/madhu-goutham-reddy-ambati/",
   },
   {
     name: "X",
@@ -44,7 +41,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:madhugouthamreddy@gmail.com",
   },
 ];
 
@@ -52,19 +49,20 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Machine Learning Engineer & Computer Vision Specialist</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Madhu, a Machine Learning Engineer and Research Assistant at Northern Illinois University, where I develop scalable ML models and advanced computer vision solutions.
+      <br />
+      I also build robust MLOps pipelines and contribute to cutting-edge research in AI.
     </>
   ),
 };
 
 const about = {
   label: "About",
-  title: "About me",
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  title: "About Me",
+  description: `Meet ${person.name}, a seasoned ${person.role} based in Illinois.`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -81,52 +79,46 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        With over 3 years of experience in developing scalable machine learning models, data pipelines, and advanced computer vision solutions, I have consistently driven impactful improvements in prediction accuracy and system efficiency.
+        <br />
+        My expertise spans deep learning, reinforcement learning, and transfer learning, complemented by a strong foundation in MLOps and cloud services.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Northern Illinois University",
+        timeframe: "Aug 2023 – Present",
+        role: "Machine Learning Research & Computer Vision Specialist",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Engineered and deployed production-grade deep learning models, reducing image analysis time by 50% for critical projects.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Developed scalable pipelines for processing large datasets, achieving 84.39% test accuracy using DenseNet-201.
+          </>,
+          <>
+            Published peer-reviewed research on advanced computer vision algorithms and innovative ML solutions.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Tata Consultancy Services",
+        timeframe: "May 2021 – Jul 2023",
+        role: "Software Engineer (Client: Experian)",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Crafted financial services applications managing credit scores for over 2 million consumers.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Led the migration of on-premise systems to AWS, ensuring zero downtime and optimizing data processing workflows.
+          </>,
+          <>
+            Implemented agile DevOps practices and CI/CD pipelines, reducing deployment time by 40%.
           </>,
         ],
         images: [],
@@ -134,54 +126,49 @@ const about = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Northern Illinois University",
+        description: <>Master of Science in Computer Science (GPA: 3.7, Aug 2023 – May 2025)</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "SRM Institute of Science & Technology",
+        description: <>Bachelor of Technology (GPA: 3.8)</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Machine Learning & AI",
+        description: (
+          <>
+            Proficient in Python, TensorFlow, PyTorch, and advanced ML frameworks to develop scalable machine learning models, including deep learning, reinforcement learning, and transfer learning.
+          </>
+        ),
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "MLOps & Deployment",
+        description: (
+          <>
+            Experienced in designing robust MLOps pipelines using Apache Spark, Hadoop, AWS cloud services, and CI/CD practices for efficient model deployment.
+          </>
+        ),
+        images: [],
+      },
+      {
+        title: "Data Analysis & Visualization",
+        description: (
+          <>
+            Skilled in Pandas, NumPy, Matplotlib, and Power BI for data analysis, predictive analytics, and crafting impactful visualizations.
+          </>
+        ),
+        images: [],
       },
     ],
   },
@@ -189,94 +176,89 @@ const about = {
 
 const blog = {
   label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  title: "Insights on Machine Learning & AI",
+  description: `Read about ${person.name}'s latest research, technical explorations, and industry insights.`,
 };
 
 const work = {
   label: "Work",
-  title: "My projects",
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  title: "Projects & Research",
+  description: `A showcase of projects and research by ${person.name}, featuring innovative machine learning and computer vision solutions.`,
 };
 
 const gallery = {
   label: "Gallery",
-  title: "My photo gallery",
-  description: `A photo collection by ${person.name}`,
-  // Images from https://pexels.com
+  title: "My Photo Gallery",
+  description: `A curated collection of images showcasing my journey and professional milestones.`,
   images: [
     {
       src: "/images/gallery/img-01.jpg",
-      alt: "image",
+      alt: "Gallery image",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/img-02.jpg",
-      alt: "image",
+      alt: "Gallery image",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/img-03.jpg",
-      alt: "image",
+      alt: "Gallery image",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/img-04.jpg",
-      alt: "image",
+      alt: "Gallery image",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/img-05.jpg",
-      alt: "image",
+      alt: "Gallery image",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/img-06.jpg",
-      alt: "image",
+      alt: "Gallery image",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/img-07.jpg",
-      alt: "image",
+      alt: "Gallery image",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/img-08.jpg",
-      alt: "image",
+      alt: "Gallery image",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/img-09.jpg",
-      alt: "image",
+      alt: "Gallery image",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/img-10.jpg",
-      alt: "image",
+      alt: "Gallery image",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/img-11.jpg",
-      alt: "image",
+      alt: "Gallery image",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/img-12.jpg",
-      alt: "image",
+      alt: "Gallery image",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/img-13.jpg",
-      alt: "image",
+      alt: "Gallery image",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/img-14.jpg",
-      alt: "image",
+      alt: "Gallery image",
       orientation: "horizontal",
     },
   ],
