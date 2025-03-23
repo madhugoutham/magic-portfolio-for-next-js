@@ -7,7 +7,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Machine Learning Engineer & Computer Vision Specialist",
-  avatar: "/images/cropped-IMG_9085.JPG",
+  avatar: "/images/avatar.jpg",
   location: "America/Chicago", // IANA time zone identifier for Chicago
   languages: ["English"],
 };
